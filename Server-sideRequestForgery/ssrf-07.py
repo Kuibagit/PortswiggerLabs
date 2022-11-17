@@ -5,7 +5,7 @@ import urllib3
 import random
 import threading
 from urllib.parse import urlparse
-from colorama import init ,Fore, Back, Style
+from colorama import init
 
 init(autoreset=True)
 

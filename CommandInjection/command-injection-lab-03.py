@@ -4,7 +4,8 @@ import sys
 import urllib3
 from bs4 import BeautifulSoup 
 from urllib.parse import urlparse
-from colorama import init, Fore, Back, Style
+from colorama import init
+
 init(autoreset=True)
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)

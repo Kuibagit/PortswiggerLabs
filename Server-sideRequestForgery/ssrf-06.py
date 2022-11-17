@@ -3,7 +3,7 @@ import requests
 import sys
 import urllib3
 from urllib.parse import urlparse
-from colorama import init, Fore, Back, Style
+from colorama import init
 
 init(autoreset=True)
 

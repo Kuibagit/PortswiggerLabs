@@ -3,7 +3,8 @@ import requests
 import sys
 import urllib3
 from urllib.parse import urlparse
-from colorama import init, Fore, Back, Style
+from colorama import init
+
 init(autoreset=True)
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -35,7 +36,7 @@ def main():
 	url = o.scheme + "://" + o.hostname
 	command = sys.argv[2]
 	
-	print("\033[36m[+] Exploting command injection...")
+	print("\033[36m[+] Exploiting command injection...")
 	
 	run_command(url, command)
 
