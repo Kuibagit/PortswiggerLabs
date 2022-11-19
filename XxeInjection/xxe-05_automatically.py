@@ -83,9 +83,9 @@ def exploit_xxe_dnslog(url, server_url):
 def submit_flags(url, flags):
 	path = '/submitSolution'
 	params = {'answer': flags}
-	req3 = requests.post(url+path, data=params, headers=header, verify=False, proxies=proxies)
+	req4 = requests.post(url+path, data=params, headers=header, verify=False, proxies=proxies)
 
-	if req3.status_code == 200 and "true" in req3.text:
+	if req4.status_code == 200 and "true" in req4.text:
 		print("\033[32m[+] Auto submit flags successful!")
 	else:
 		print("\033[33m[-] Failed to submit flags automatically, please submit manually.")
